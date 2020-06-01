@@ -23,7 +23,7 @@ public class DatabaseConfiguration {
             Properties properties = new Properties();
             properties.load(inputStream);
 
-            Class.forName("com.mysql.cj.jdb.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
 
             return DriverManager.getConnection(
                     properties.getProperty("url"),
